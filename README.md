@@ -1,12 +1,12 @@
 # Add comments to your Laravel application
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/zepson/laravel-comments.svg?style=flat-square)](https://packagist.org/packages/zepson/laravel-comments)
-[![Build Status](https://img.shields.io/travis/zepson/laravel-comments/master.svg?style=flat-square)](https://travis-ci.org/zepson/laravel-comments)
-[![Quality Score](https://img.shields.io/scrutinizer/g/zepson/laravel-comments.svg?style=flat-square)](https://scrutinizer-ci.com/g/Zepson-Technologies/laravel-comments)
-[![Total Downloads](https://img.shields.io/packagist/dt/zepson/laravel-comments.svg?style=flat-square)](https://packagist.org/packages/zepson/laravel-comments)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/quickcamx/laravel-comments.svg?style=flat-square)](https://packagist.org/packages/quickcamx/laravel-comments)
+[![Build Status](https://img.shields.io/travis/quickcamx/laravel-comments/master.svg?style=flat-square)](https://travis-ci.org/quickcamx/laravel-comments)
+[![Quality Score](https://img.shields.io/scrutinizer/g/quickcamx/laravel-comments.svg?style=flat-square)](https://scrutinizer-ci.com/g/quickcamx-Technologies/laravel-comments)
+[![Total Downloads](https://img.shields.io/packagist/dt/quickcamx/laravel-comments.svg?style=flat-square)](https://packagist.org/packages/quickcamx/laravel-comments)
 
 Add the ability to associate comments to your Laravel Eloquent models. The comments can be approved and nested.
-Read Article on zepson website  https://zepson.co.tz/index.php/2020/12/31/laravel-comments-package/
+Read Article on quickcamx website  https://quickcamx.co.tz/index.php/2020/12/31/laravel-comments-package/
 
 ```php
 $post = Post::find(1);
@@ -21,7 +21,7 @@ $post->commentAsUser($user, 'This is a comment from someone else');
 You can install the package via composer:
 
 ```bash
-composer require zepson/laravel-comments
+composer require quickcamx/laravel-comments
 ```
 
 The package will automatically register itself.
@@ -29,7 +29,7 @@ The package will automatically register itself.
 You can publish the migration with:
 
 ```bash
-php artisan vendor:publish --provider="zepson\Comments\CommentsServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="quickcamx\Comments\CommentsServiceProvider" --tag="migrations"
 ```
 
 After the migration has been published you can create the media-table by running the migrations:
@@ -41,7 +41,7 @@ php artisan migrate
 You can publish the config-file with:
 
 ```bash
-php artisan vendor:publish --provider="zepson\Comments\CommentsServiceProvider" --tag="config"
+php artisan vendor:publish --provider="quickcamx\Comments\CommentsServiceProvider" --tag="config"
 ```
 
 ## Usage
@@ -54,7 +54,7 @@ To let your models be able to receive comments, add the `HasComments` trait to t
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use zepson\Comments\Traits\HasComments;
+use quickcamx\Comments\Traits\HasComments;
 
 class Post extends Model
 {
@@ -104,7 +104,7 @@ If you want to automatically approve a comment for a specific user (and optional
 ```php
 namespace App\Models;
 
-use zepson\Comments\Contracts\Commentator;
+use quickcamx\Comments\Contracts\Commentator;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable implements Commentator
@@ -156,7 +156,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email zepsoncompany@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email quickcamxcompany@gmail.com instead of using the issue tracker.
 
 ## Credits
 - [Novath Thomas](https://github.com/pro-cms)

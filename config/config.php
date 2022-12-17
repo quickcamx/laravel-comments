@@ -6,7 +6,7 @@ return [
      * The comment class that should be used to store and retrieve
      * the comments.
      */
-    'comment_class' => \zepson\Comments\Comment::class,
+    'comment_class' => \quickcamx\Comments\Comment::class,
 
     /*
      * The user model that should be used when associating comments with

@@ -1,8 +1,8 @@
 {
-    "name": "zepson/laravel-comments",
+    "name": "quickcamx/laravel-comments",
     "description": "Add comments to your Laravel application",
     "keywords": [
-        "zepson",
+        "quickcamx",
         "comments",
         "laravel-comments"
     ],
@@ -11,14 +11,14 @@
     "authors": [
         {
             "name": "Novath Thomas & Jofrey Abraham",
-            "email": "zepsoncompany@gmail.com",
-            "homepage": "https://zepson.co.tz",
+            "email": "quickcamxcompany@gmail.com",
+            "homepage": "https://quickcamx.co.tz",
             "role": "Developers"
         }
     ],
     "require": {
         "php": "^7.2.5",
-        "illuminate/support": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0"
+        "illuminate/support": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0"
     },
     "require-dev": {
         "orchestra/testbench": "^3.6|^5.0",
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "zepson\\Comments\\": "src"
+            "quickcamx\\Comments\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "zepson\\Comments\\Tests\\": "tests"
+            "quickcamx\\Comments\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,7 +45,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "zepson\\Comments\\CommentsServiceProvider"
+                "quickcamx\\Comments\\CommentsServiceProvider"
             ]
         }
     }
